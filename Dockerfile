@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:15.2.1-alpine
 # install simple http server for serving static content
 RUN npm install -g http-server
 WORKDIR .
