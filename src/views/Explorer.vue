@@ -23,16 +23,16 @@
       </div>
     </div>
     <div class="map">
-      <WelcomeMap />
+      <ExplorerMap />
     </div>
   </div>
 </template>
 
 <script>
-import WelcomeMap from "@/components/WelcomeMap.vue";
+import ExplorerMap from "@/components/ExplorerMap.vue";
 export default {
   components: {
-    WelcomeMap,
+    ExplorerMap,
   },
 };
 </script>
@@ -52,6 +52,7 @@ export default {
   width: 32vw;
   height: 100vh;
   z-index: 2;
+  grid-template: ;
 }
 .map {
   width: 50vw;

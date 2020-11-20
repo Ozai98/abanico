@@ -1,15 +1,11 @@
 <template>
   <div id="map" v-on:click="closeBio()">
     <iframe
-      id="displaying-map"
-      src="https://snazzymaps.com/embed/272481"
+      src="https://snazzymaps.com/embed/275315"
       width="100%"
       height="100%"
       style="border:none;"
     ></iframe>
-
-    <!-- <gmap-map :center="center" :zoom="zoom" style="width: 100%; height: 100%;">
-    </gmap-map> -->
   </div>
 </template>
 
