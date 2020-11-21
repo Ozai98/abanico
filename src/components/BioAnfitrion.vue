@@ -1,14 +1,23 @@
 <template>
   <div id="containerBio">
+    <div>
+      <button id="close-bio" v-on:click="closeBio()">
+        <img id="close-icon" src="@/assets/cerrar.svg" alt="close-icon" />
+      </button>
+      <div id="yellow-band"></div>
+    </div>
     <div class="bio" id="bio1">
-      <h1>Sabrina Jara</h1>
-      <div class="profile-pic-div">
-        <img
-          class="profile-pic"
-          src="@/assets/perfil_1.jpeg"
-          alt="foto anfitrión"
-        />
+      <div id="header">
+        <div class="profile-pic-div">
+          <img
+            class="profile-pic"
+            src="@/assets/perfil_1.jpeg"
+            alt="foto anfitrión"
+          />
+        </div>
+        <h1>Sabrina Jara</h1>
       </div>
+
       <p>
         Hola mi nombre es Sabrina Jara, les doy la bienvenida a nuestro
         hospedaje familiar, si deciden alojarse en este lugar podrán encontrar
@@ -24,46 +33,49 @@
         disposición.
       </p>
       <ul>
-        <li>Habitaciones:</li>
-        <li>Amobladas:</li>
-        <li>Baños:</li>
-        <li>Agua Caliente:</li>
-        <li>Uso de cocina:</li>
-        <li>Gimnasio en Casa:</li>
-        <li>Preparación de Comida:</li>
-        <li>Vehículo:</li>
-        <li>Estacionamiento:</li>
-        <li>Quincho:</li>
-        <li>Patio:</li>
-        <li>Guía Turístico:</li>
-        <li>Televisión:</li>
-        <li>Entrada Independiente:</li>
+        <li>Camas: 1</li>
+        <li>Habitaciones: 1</li>
+        <li>Baño exclusivo: Sí</li>
+        <li>Agua Caliente: Sí</li>
+        <li>Alimentación: No</li>
+        <li>Televisión: No</li>
+        <li>Vehículo: No</li>
+        <li>Uso de cocina: Sí</li>
+        <li>Gimnasio en Casa: No</li>
+        <li>Entrada Independiente: Sí</li>
       </ul>
-      <carousel-3d :width="200" :height="400">
-        <slide :index="0">
-          <img
-            class="profile-pic"
-            src="@/assets/perfil_2.jpg"
-            alt="foto anfitrión"
-          />
-        </slide>
-        <slide :index="1">
-          <img
-            class="profile-pic"
-            src="@/assets/perfil_2.jpg"
-            alt="foto anfitrión"
-          />
-        </slide>
-      </carousel-3d>
-    </div>
-    <div class="bio" id="bio2">
-      <h1>Brígida Pradenas</h1>
-      <div class="profile-pic-div">
+      <div>
         <img
-          class="profile-pic"
-          src="@/assets/perfil_2.jpg"
+          class="slider-img"
+          src="@/assets/sra_sabrina_1.png"
           alt="foto anfitrión"
         />
+      </div>
+      <div>
+        <img
+          class="slider-img"
+          src="@/assets/sra_sabrina_2.png"
+          alt="foto anfitrión"
+        />
+      </div>
+      <div>
+        <img
+          class="slider-img"
+          src="@/assets/sra_sabrina_3.png"
+          alt="foto anfitrión"
+        />
+      </div>
+    </div>
+    <div class="bio" id="bio2">
+      <div id="header">
+        <div class="profile-pic-div">
+          <img
+            class="profile-pic"
+            src="@/assets/perfil_2.jpg"
+            alt="foto anfitrión"
+          />
+        </div>
+        <h1>Brigida Pradenas</h1>
       </div>
       <p>
         Hola mi nombre es Brígida Pradenas, les doy la bienvenida a nuestro
@@ -80,46 +92,50 @@
         esperaremos con amabilidad y buenas conversaciones para comenzar el día.
       </p>
       <ul>
-        <li>Habitaciones:</li>
-        <li>Amobladas:</li>
-        <li>Baños:</li>
-        <li>Agua Caliente:</li>
-        <li>Uso de cocina:</li>
-        <li>Gimnasio en Casa:</li>
-        <li>Preparación de Comida:</li>
-        <li>Vehículo:</li>
-        <li>Estacionamiento:</li>
-        <li>Quincho:</li>
-        <li>Patio:</li>
-        <li>Guía Turístico:</li>
-        <li>Televisión:</li>
-        <li>Entrada Independiente:</li>
+        <li>Camas: 1</li>
+        <li>Habitaciones: 1</li>
+        <li>Baño exclusivo: Sí</li>
+        <li>Agua Caliente: Sí</li>
+        <li>Alimentación: A convenir</li>
+        <li>Televisión: Sí</li>
+        <li>Vehículo: No</li>
+        <li>Uso de cocina: Sí</li>
+        <li>Gimnasio en Casa: Sí</li>
+        <li>Entrada Independiente: Sí</li>
       </ul>
-      <carousel-3d :width="200" :height="400">
-        <slide :index="0">
-          <img
-            class="profile-pic"
-            src="@/assets/perfil_2.jpg"
-            alt="foto anfitrión"
-          />
-        </slide>
-        <slide :index="1">
-          <img
-            class="profile-pic"
-            src="@/assets/perfil_2.jpg"
-            alt="foto anfitrión"
-          />
-        </slide>
-      </carousel-3d>
-    </div>
-    <div class="bio" id="bio3">
-      <h1>Sandra Sáez</h1>
-      <div class="profile-pic-div">
+
+      <div>
         <img
-          class="profile-pic"
-          src="@/assets/perfil_3.jpg"
+          class="slider-img"
+          src="@/assets/sra_brigida_1.png"
           alt="foto anfitrión"
         />
+      </div>
+      <div>
+        <img
+          class="slider-img"
+          src="@/assets/sra_brigida_2.png"
+          alt="foto anfitrión"
+        />
+      </div>
+      <div>
+        <img
+          class="slider-img"
+          src="@/assets/sra_brigida_3.png"
+          alt="foto anfitrión"
+        />
+      </div>
+    </div>
+    <div class="bio" id="bio3">
+      <div id="header">
+        <div class="profile-pic-div">
+          <img
+            class="profile-pic"
+            src="@/assets/perfil_3.jpg"
+            alt="foto anfitrión"
+          />
+        </div>
+        <h1>Sandra Sáez</h1>
       </div>
       <p>
         Hola mi nombre es Sandra Sáez, los invito a alojarse en nuestro
@@ -142,48 +158,45 @@
         nuestra familia.
       </p>
       <ul>
-        <li>Habitaciones:</li>
-        <li>Amobladas:</li>
-        <li>Baños:</li>
-        <li>Agua Caliente:</li>
-        <li>Uso de cocina:</li>
-        <li>Gimnasio en Casa:</li>
-        <li>Preparación de Comida:</li>
-        <li>Vehículo:</li>
-        <li>Estacionamiento:</li>
-        <li>Quincho:</li>
-        <li>Patio:</li>
-        <li>Guía Turístico:</li>
-        <li>Televisión:</li>
-        <li>Entrada Independiente:</li>
+        <li>Camas: 2</li>
+        <li>Habitaciones: 1</li>
+        <li>Baño exclusivo: Sí</li>
+        <li>Agua Caliente: Sí</li>
+        <li>Alimentación: A convenir</li>
+        <li>Televisión: Sí</li>
+        <li>Vehículo: Sí</li>
+        <li>Uso de cocina: Sí</li>
+        <li>Gimnasio en Casa: No</li>
+        <li>Entrada Independiente: Sí</li>
       </ul>
-      <carousel-3d :width="200" :height="400">
-        <slide :index="0">
-          <img
-            class="profile-pic"
-            src="@/assets/perfil_2.jpg"
-            alt="foto anfitrión"
-          />
-        </slide>
-        <slide :index="1">
-          <img
-            class="profile-pic"
-            src="@/assets/perfil_2.jpg"
-            alt="foto anfitrión"
-          />
-        </slide>
-      </carousel-3d>
+      <div>
+        <img
+          class="slider-img"
+          src="@/assets/sra_sandra_1.png"
+          alt="foto anfitrión"
+        />
+      </div>
+      <div>
+        <img
+          class="slider-img"
+          src="@/assets/sra_sandra_2.png"
+          alt="foto anfitrión"
+        />
+      </div>
+      <div>
+        <img
+          class="slider-img"
+          src="@/assets/sra_sandra_3.png"
+          alt="foto anfitrión"
+        />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import EventBus from "../eventBus.js";
-import { Carousel3d, Slide } from "vue-carousel-3d";
 export default {
-  data() {
-    return {};
-  },
   mounted() {
     EventBus.$on("openAnfi1", function() {
       document.getElementById("containerBio").style.display = "flex";
@@ -203,50 +216,163 @@ export default {
       document.getElementById("bio2").style.display = "none";
       document.getElementById("bio3").style.display = "flex";
     });
-    EventBus.$on("closeBio", function() {
-      document.getElementById("containerBio").style.display = "none";
-      document.getElementById("bio1").style.display = "none";
-      document.getElementById("bio2").style.display = "none";
-      document.getElementById("bio3").style.display = "none";
-    });
   },
-  components: {
-    Carousel3d,
-    Slide,
+  data() {
+    return {
+      pink: "#f9d9d2",
+      orange: "#ff6d2d",
+    };
+  },
+  methods: {
+    closeBio() {
+      document.getElementById("containerBio").style.display = "none";
+    },
   },
 };
 </script>
 
 <style scoped>
-#containerBio {
-  position: absolute;
-  width: 20vw;
-  height: 100vh;
-  z-index: 2;
-  display: none;
-  top: 0;
-  right: 0;
-  background-color: white;
-  flex-direction: column;
-  align-items: center;
-  overflow: scroll;
+@media screen and (max-width: 600px) {
+  p {
+    margin: 2vh 6vh;
+    font-size: 0.9em;
+  }
+  ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    margin: 0 6vh 2vh 6vh;
+  }
+  li {
+    font-size: 0.8em;
+  }
+  #containerBio {
+    position: absolute;
+    width: 100vw;
+    height: 60vh;
+    z-index: 2;
+    display: none;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
+  #header {
+    margin-top: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #yellow-band {
+    width: 85vw;
+    height: 4vh;
+    background-color: #ffe164;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 15px 0 0 15px;
+  }
+  #close-icon {
+    position: absolute;
+    top: 0;
+    left: 1vh;
+    height: 4vh;
+  }
+  #close-bio {
+    cursor: pointer;
+  }
+  .profile-pic-div {
+    height: 8vh;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 8px solid #f9d9d2;
+    margin-left: 4vh;
+    margin-right: 1.5vh;
+  }
+  .profile-pic {
+    height: 8vh;
+  }
+  .bio {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider-img {
+    height: 40vh;
+    margin: 2vh;
+  }
 }
-.profile-pic-div {
-  height: 20vh;
-  overflow: hidden;
-  border-radius: 100%;
-  border: 8px solid white;
-}
-.profile-pic-div:hover {
-  border: 8px solid #ff6d2d;
-  cursor: pointer;
-}
-.profile-pic {
-  height: 20vh;
-}
-.bio {
-  display: none;
-  flex-direction: column;
-  align-items: center;
+@media screen and (min-width: 601px) {
+  p {
+    margin: 2vw 4.5vw;
+  }
+  ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    margin: 0 4.5vw 2vw 4.5vw;
+    list-style-type: none;
+  }
+  #containerBio {
+    position: absolute;
+    width: 35vw;
+    height: 100vh;
+    z-index: 2;
+    display: none;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
+  #header {
+    margin-top: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #yellow-band {
+    width: 29.5vw;
+    height: 4vh;
+    background-color: #ffe164;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 15px 0 0 15px;
+  }
+  #close-icon {
+    position: absolute;
+    top: 0;
+    left: 1vw;
+    height: 4vh;
+  }
+  #close-bio {
+    cursor: pointer;
+  }
+  .profile-pic-div {
+    height: 8vh;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 8px solid #f9d9d2;
+    margin-left: 2vw;
+    margin-right: 1.5vw;
+  }
+  .profile-pic {
+    height: 8vh;
+  }
+  .bio {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slider-img {
+    height: 24vw;
+    margin: 2vw;
+  }
 }
 </style>

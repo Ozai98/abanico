@@ -27,21 +27,5 @@ export default {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  max-height: 100%;
-  background-color: black;
-}
-#ex {
-  width: 100vw;
-  height: 500px;
-  color: transparent;
-  overflow: hidden;
-}
-#int {
-  width: 800px;
-  height: 800px;
-  background-color: black;
-  margin-left: -70%;
-  margin-top: -20%;
-  transform: rotate(-10deg);
 }
 </style>
